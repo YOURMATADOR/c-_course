@@ -10,7 +10,10 @@
                 "-o",
                 "${fileBasenameNoExtension}.exe"
             ],
-           
+            "problemMatcher": [
+                "$tsc-watch"
+            ],
+            "isBackground": true
         }
     ],
     "version": "2.0.0"
