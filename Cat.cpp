@@ -3,9 +3,9 @@
 
 using namespace std;
 
-Cat::Cat()
+Cat::Cat(bool humor)
 {
-    happy = false;
+    happy = humor;
 }
 
 Cat::~Cat()
@@ -38,5 +38,5 @@ void Cat::getHummor()
 void Cat::setHummor(bool humor = false)
 {
     cout << "Changing the hummor" << endl;
-    happy = humor;
+    this->happy = humor;
 }
