@@ -32,5 +32,15 @@ int main()
         p_arr_pointer++;
     }
 
+    string *p_arr_start = &arr_pointer[0];
+    string *p_arr_final = &arr_pointer[2];
+    string &p_arr_start_reference = arr_pointer[0];
+    
+    long arr_lenght = p_arr_final - p_arr_start;
+    cout << arr_lenght << endl;
+    cout << p_arr_start << endl;
+    cout << *p_arr_start << endl;
+    cout << p_arr_start_reference << endl;
+    cout << &p_arr_start_reference << endl;
     return 0;
 }

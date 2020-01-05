@@ -13,14 +13,14 @@ void changing_the_original(double *pValue)
 
 int main()
 {
-    double nValue = 20;
+    double nValue = 10;
     double *pnValue = &nValue;
     cout << nValue << endl;
-    cout << &nValue << endl;
+    cout << *nValue << endl;
 
     changing_the_original(&nValue);
     cout << nValue << endl;
-    cout << &nValue << endl;
+    cout << nValue << endl;
 
     return 0;
 }
